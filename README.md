@@ -5,14 +5,19 @@ Last update:  February 6, 2022
 
 What does NFT Map do?
 -------------------------------------------------------------
-Step #1: Open a web browser with Metamask installed, visit https://nftmint.traxa.io and click the 'Connect' button at the top right-hand corner.  
+Step #1: Open a web browser with Metamask installed, visit https://nftmint.traxa.io and click the 'Connect' button at the top right-hand corner.
+
 Step #2: Sign into your metamask and make sure you are connected to either
  (a) Polygon (Mainnet) 
  or
  (b) Polygon Mumbai (Testnet) using Metamask
+
 Step #3: Click the 'Mint' button at the bottom right-hand corner
+
 Step #4: When prompted, click 'Browse' to browse for an image that you would like to mint as an NFT from your computer.  Select that image and click 'Mint'.
+
 Step #5:  Authorize the transaction on Metamask (we are covering the first 1000 images of storage hosting costs on Arweave automatically for you) and pay the gas fees in MATIC.
+
 Step #6:  Give the Polygon and Arweave chains some time (1 minute to 20 minutes) to settle the transactions and your NFT should be visible on the map at https://nftmint.traxa.io and viewable on NFT browser of your wallet address. 
 
 Why?  What is the Problem being Solved?
