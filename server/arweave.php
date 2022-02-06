@@ -6,8 +6,9 @@ use \Arweave\SDK\Support\Wallet;
 include __DIR__ . '/vendor/autoload.php';
 
 // Read uploaded file content
-$mime = mime_content_type($_FILES['file']['tmp_name']);
-if(!str_starts_with($mime, 'image')) die("You can upload only images");
+//$mime = mime_content_type();
+//$correctFormat = str_ends_with($_FILES['file']['tmp_name'], 'png') || str_ends_with($_FILES['file']['tmp_name'], 'jpg') || str_ends_with($_FILES['file']['tmp_name'], 'jpeg');
+//if() die("You can upload only images");
 
 $file = file_get_contents($_FILES['file']['tmp_name']);
 
@@ -19,7 +20,7 @@ $wallet =  new Wallet($jwk);
 $transaction = $arweave->createTransaction($wallet, [
     'data' => $file,
     'tags' => [
-        'Content-Type' => $mime,
+        'Content-Type' => 'image/jpg',
         'X-Lat' => $_FILES['lat'],
         'X-Lon' => $_FILES['lon']
     ]

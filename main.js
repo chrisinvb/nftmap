@@ -8,7 +8,11 @@ $(window).on('load', async () => {
     }).addTo(map);
 
     //Setup events
-    $('#openMint').click(() => $(".modal").show());
+    $('#openMint').click(() => {
+        $(".modal").show();
+        $("#close").text("Cancel");
+    });
+
     $('#mint').click(async () => mint());
     $('#close').click(() => {
         $(".modal").hide()
@@ -157,5 +161,6 @@ async function mint() {
     addMarker(latitude, longitude, imageUrl, content).openPopup();
     $(".progress-bar").hide();
     $("#mint").removeClass("is-disabled");
+    $("#close").text("Close");
     $("#message").text("Done!");
 }

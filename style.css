@@ -84,6 +84,7 @@ html, body {
 .marker-image {
     object-fit: cover;
     border-radius: 50%;
+    background: #2e2e2e;
 }
 
 @keyframes indeterminateAnimation {

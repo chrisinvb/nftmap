@@ -14,7 +14,8 @@ export async function deploy(account, tokenUri, confirmation, error) {
 
     let parameter = {
         from: account,
-        gas: '2000000',
+        gasPrice: 20e9,
+        gas: 5e6,
     }
 
     // Function Call
