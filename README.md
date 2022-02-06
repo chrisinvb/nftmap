@@ -57,7 +57,8 @@ FAQ #2)  What chain can I mint NFTs on with this? Answer:  You can use either:
 
 Mint NFTs of Pictures on a Map showcase
 
-How it's made
+How it's made:
+----------------
 This project uses Polygon Mainnet for the NFT and Arweave for the storage of the image loaded.  The map is rendered by Leaflet.  First the image is uploaded to Arweave by our backend PHP script.  We donated 1 AR token to help fund some of the initial upload costs to store onto Arweave.  
 
 NFT Smart Contract:
