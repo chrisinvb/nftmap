@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.7.0/dist/web3.min.js"></script>
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+    <link rel="stylesheet" href="style.css">
+    <title>Nftmap</title>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-content card">
+            <header>
+                <h4>Mint your NFT</h4>
+            </header>
+            <input id="file" type="file" accept="image/png, image/jpeg">
+            <p id="message"></p>
+            <div class="progress-bar">
+                <div class="progress-bar-value"></div>
+            </div>
+            <footer class="is-right">
+                <a class="button" id="close">Cancel</a>
+                <a class="button primary" id="mint">Mint</a>
+            </footer>
+        </div>
+    </div>
+
+    <button id="metamask" class="metamask">Connect Metamask</button>
+    <button id="openMint" class="button mint">Mint</button>
+    <div id="map"></div>
+</body>
+</html>

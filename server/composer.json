@@ -1,0 +1,17 @@
+{
+    "name": "traxa/nftmap",
+    "autoload": {
+        "psr-4": {
+            "Traxa\\Nftmap\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "marco",
+            "email": "marcocimolai49@gmail.com"
+        }
+    ],
+    "require": {
+        "arweave/arweave-sdk": "^0.4.0"
+    }
+}
