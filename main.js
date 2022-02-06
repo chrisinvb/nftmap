@@ -131,7 +131,6 @@ async function mint() {
     let arweave = arweaveResult[1]; //NFT Metadata
     let image = arweaveResult[0]; //Uploaded image
 
-
     //Step 2 - Deploy contract
     var contract;
     try {

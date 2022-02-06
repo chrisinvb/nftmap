@@ -14,12 +14,13 @@ export async function deploy(account, tokenUri, confirmation, error) {
 
     let parameter = {
         from: account,
-        gas: '4700000',
+        gas: '2000000',
     }
 
     // Function Call
     deploy_contract.deploy(payload).send(parameter, (err, transactionHash) => {
         if(err) error(err);
+        confirmation(transactionHash);
     }).on('confirmation', () => {}).then((newContractInstance) => {
         confirmation(newContractInstance.options.address);
     })
