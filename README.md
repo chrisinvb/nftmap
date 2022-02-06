@@ -8,7 +8,7 @@ What does NFT Map do?
 Step #1: Open a web browser with Metamask installed, visit https://nftmint.traxa.io and click the 'Connect' button at the top right-hand corner.  
 Step #2: Sign into your metamask and make sure you are connected to either
  (a) Polygon (Mainnet) 
-  - or-
+ or
  (b) Polygon Mumbai (Testnet) using Metamask
 Step #2: Click the 'Mint' button at the bottom right-hand corner
 Step #3: When prompted, click 'Browse' to browse for an image that you would like to mint as an NFT from your computer.  Select that image and click 'Mint'.
